@@ -93,7 +93,7 @@ HOST              VERDICT        DECIDED IN    OF       p  SUCC  REF  SIL
 | `REF` | First-contacts answered by a RST within τ (host up, port closed). |
 | `SIL` | First-contacts that got nothing within τ. |
 
-### The diagnostics above it
+### The Section above it
 
 | Line | Meaning |
 |---|---|
