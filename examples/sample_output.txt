@@ -1,0 +1,15 @@
+[*] reading examples/sample_input.pcap
+    14,047 packets  ->  5,970 flows  ->  3,117 connection attempts
+
+── Outcome Classification ─────────────────────────────────────────────
+
+    tau       = 6.9034 s   (99th pct of reply latency)
+    answered  = 3,117 of 3,117  (100.0%)
+    outcomes  = 3,085 success   0 refused   32 silent
+There is < 2 peaks => undefined — skipping labeling (the fallback thetas need no labels).
+
+── Results of Threshold Random Walk, Wald's Sequential Probability Ratio Test 
+
+HOST              VERDICT        DECIDED IN    OF       p  SUCC  REF  SIL
+-----------------------------------------------------------------------
+192.168.0.51      Benign                  4   550   0.002   549    0    1
