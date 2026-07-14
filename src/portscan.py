@@ -105,7 +105,7 @@ def main():
     for verdict in verdicts.values():
         decision_counts[verdict.decision] += 1
 
-    section("Results")
+    section("Results of Threshold Random Walk, Wald's Sequential Probability Ratio Test")
     report(verdicts, host_stats)
 
 if __name__ == "__main__":
