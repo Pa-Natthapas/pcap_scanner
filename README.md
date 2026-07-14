@@ -43,6 +43,12 @@ It caught a 340-destination scanner in 3 observations, and it correctly
 but the Sequential Probability Ratio Test looked at the actual sequence of
 outcomes, saw success after success, and cleared it as *Benign*.
 
+### Why the initial stage fails: hosts seen only once
+The weak step is estimating θ₀ and θ₁, which is done by splitting hosts on the threshold Ξ and pooling each group's success rate. This assumes that the distributions is bimodal. Where in reality, it is not.
+
+**Rule of thumb:** if that number is `1`, ignore every verdict with a low `OF` count.
+`1 of 1` is noise. `3 of 340` is evidence.
+
 ### Other scope limits
 
 - **TCP only.** TRW depends on the SYN / SYN-ACK / RST handshake. UDP and ICMP scans are not
